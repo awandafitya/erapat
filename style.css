@@ -1,0 +1,440 @@
+/* Reset dan Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(150, 170, 251);
+    border: 1px solid #4a1ce0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    z-index: 100;
+}
+
+.dropdown-content button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #4a79a5;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown-content button:hover {
+    background-color: #5b83a6;
+}
+
+/* === STYLE LOGIN PAGE === */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #4a79a5;
+}
+
+.login-page .login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.login-page .login-container img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.login-page .login-container h2,
+.login-page .login-container p {
+    color: #333;
+}
+
+.login-page .login-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-page .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-page .login-btn {
+    background: #5b83a6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-page .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* === STYLE HALAMAN LAIN === */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+    width: 260px;
+    background: #4a79a5;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+}
+
+.sidebar li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+    width: 24px;
+    height: auto;
+}
+
+/* === MAIN CONTENT === */
+main {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: none;
+}
+
+/* === FORM STYLING === */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* === BUTTONS === */
+button {
+    padding: 12px 20px;
+    background: #4a79a5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #3a668a;
+}
+
+button[type="button"] {
+    background: #bbb;
+}
+
+button[type="button"]:hover {
+    background: #999;
+}
+
+.dashboard-icon {
+    margin-top: 20px;
+    width: 910px;
+    max-width: none;
+}
+
+/* === STYLE PRESENCE === */
+.presence-container {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: none;
+}
+
+.presence-container h2 {
+    margin-bottom: 20px;
+}
+
+.presence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.presence-table th, .presence-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.presence-table th {
+    background: #4a79a5;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Default untuk semua */
+}
+
+th {
+    background-color: #4a79a5;
+    color: white;
+}
+
+td:nth-child(2) { /* Kolom kedua (Name) */
+    text-align: left; /* Mengatur teks rata kiri */
+    padding-left: 15px; /* Memberikan sedikit jarak dari sisi kiri */
+}
+
+.present-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* === STYLE CONFIRM ATTENDANCE === */
+.attendance-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4a79a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.attendance-container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.attendance-container h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.attendance-container label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+}
+
+.attendance-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.attendance-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.attendance-btn {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.attendance-btn-checkin {
+    background-color: #5b83a6;
+    color: white;
+}
+
+.attendance-btn-checkout {
+    background-color: white;
+    color: #5b83a6;
+    border: 1px solid #5b83a6;
+}
+
+/* === TABLE STYLING === */
+#agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#agenda-table th, #agenda-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#agenda-table th {
+    background-color: #5b83a6;
+    text-align: center;
+}
+
+/* === BUTTON STYLING === */
+button.edit-button, button.note-button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button.edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.note-button {
+    background-color: #008CBA;
+    color: white;
+}
+
+button.edit-button:hover, button.note-button:hover {
+    background-color: #45a049;
+}
+
+button.note-button:hover {
+    background-color: #007bb5;
+}
+
+/* === NEW SCHEDULE BUTTON === */
+.new-schedule {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #f1c40f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.new-schedule:hover {
+    background-color: #f39c12;
+}
+
+/* KOP SURAT */
+.kop { 
+    text-align: center; 
+    border-bottom: 3px solid black; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+.kop img { 
+    width: 20px; 
+    height: auto; 
+    position: absolute; 
+    left: 20px; 
+    top: 10px; 
+}
+.kop h2, .kop h3, .kop p { 
+    margin: 0; 
+}
