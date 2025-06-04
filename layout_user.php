@@ -14,10 +14,9 @@
     </div>
     <nav>
         <ul>
-            <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> SCHEDULE</a></li>
-            <li><a href="submission.php"><img src="assets/icons/ikonsubmission.png" class="icon"> SUBMISSION</a></li>
-            <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> PRESENCE</a></li>
-            <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> HISTORY</a></li>
+            <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> JADWAL</a></li>
+            <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> ABSENSI</a></li>
+            <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> RIWAYAT</a></li>
         </ul>
     </nav>
 </aside>

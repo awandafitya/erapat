@@ -83,9 +83,9 @@ $result_rapat = $conn->query($sql_rapat);
                 <tr>
                     <th>No</th>
                     <th>NIP</th>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Signature</th>
+                    <th>Nama</th>
+                    <th>Dokumentasi</th>
+                    <th>Tanda Tangan</th>
                 </tr>
             </thead>
             <tbody id="presence-table-body">
@@ -106,7 +106,7 @@ $result_rapat = $conn->query($sql_rapat);
                 border-radius: 5px; 
                 cursor: pointer;
                 font-weight: bold;">
-                Close
+                Kembali
             </button>
         </div>
     </main>

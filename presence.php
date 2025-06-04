@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          onerror="this.src='assets/icons/default-profile.png'">
                 </span>
                 <div id="profile-dropdown" class="dropdown-content">
-                    <button onclick="logout()">Log Out</button>
+                    <button onclick="logout()">Keluar</button>
                 </div>           
             </div>
         </div>
@@ -182,12 +182,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <nav>
             <ul>
-                <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> SCHEDULE</a></li>
-                <li><a href="submission.php"><img src="assets/icons/ikonsubmission.png" class="icon"> SUBMISSION</a></li>
-                <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> PRESENCE</a></li>
-                <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> HISTORY</a></li>
+                <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> JADWAL</a></li>
+                <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> ABSENSI</a></li>
+                <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> RIWAYAT</a></li>
                 <?php if ($can_edit): ?>
-                    <li><a href="keloladata.php"><img src="assets/icons/ikonkeloladata.png" class="icon"> MANAGE DATA</a></li>
+                    <li><a href="keloladata.php"><img src="assets/icons/ikonkeloladata.png" class="icon"> KELOLA DATA</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
@@ -200,9 +199,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p style="color: green; font-weight: bold;">Attendance was successful</p>
         <?php else: ?>
             <form action="" method="post" enctype="multipart/form-data">
-                <label for="schedule_id">Select Meeting:</label>
+                <label for="schedule_id">Pilih rapat:</label>
                 <select id="schedule_id" name="schedule_id" required>
-                    <option value="">-- Select Meeting --</option>
+                    <option value="">-- Pilih Rapat --</option>
                     <?php while ($row = $result_rapat->fetch_assoc()): ?>
                         <option value="<?= $row['schedule_id']; ?>" <?= ($selected_schedule == $row['schedule_id']) ? 'selected' : ''; ?>>
                             <?= $row['nama_rapat']; ?>
@@ -213,24 +212,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="nip">NIP*:</label>
                 <input type="text" id="nip" name="nip" required>
 
-                <label for="nama">Name*:</label>
+                <label for="nama">Nama*:</label>
                 <input type="text" id="nama" name="nama" required>
 
-                <label for="foto">Upload Image*:</label>
+                <label for="foto">Unggah Dokumentasi*:</label>
                 <input type="file" name="foto" required>
 
-                <label for="signature">Signature*:</label>
+                <label for="signature">Tanda Tangan*:</label>
                 <div class="signature-container" style="display: flex; align-items: center; gap: 10px;">
                     <canvas id="signature-pad" width="400" height="150" style="border: 1px solid black;"></canvas>
-                    <button type="button" onclick="clearSignature()">Delete Signature</button>
+                    <button type="button" onclick="clearSignature()">Hapus Tanda Tangan</button>
                 </div>
                 <input type="hidden" name="signature" id="signature">
                 
-                <button type="submit">Submit Absensi</button>
+                <button type="submit">Kirim</button>
             </form>
         <?php endif; ?>
 
-        <button onclick="window.location.href='presence_list.php'" style="margin-top: 10px;">See Attendance List</button>
+        <button onclick="window.location.href='presence_list.php'" style="margin-top: 10px;">List Kehadiran</button>
     </main>
 </body>
 </html>

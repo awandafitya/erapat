@@ -51,59 +51,34 @@ $fotoPath = !empty($profile['foto']) ? "uploads/" . $profile['foto'] : "assets/i
         </div>
     </header>
     
-    <aside class="sidebar">
-        <div class="logo-container">
-            <a href="dashboard.php" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
-                <img src="assets/icons/logo.png" alt="Logo" class="logo">
-                <h2>E - Rapat</h2>
-            </a>
-        </div>
-    
-        </div>
-        <nav>
-            <ul>
-                <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> SCHEDULE</a></li>
-                <li><a href="submission.php"><img src="assets/icons/ikonsubmission.png" class="icon"> SUBMISSION</a></li>
-                <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> PRESENCE</a></li>
-                <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> HISTORY</a></li>
-                <?php if ($can_edit): ?>
-                    <li><a href="keloladata.php"><img src="assets/icons/ikonkeloladata.png" class="icon"> MANAGE DATA</a></li>
-                <?php endif; ?>
-            </ul>
-        </nav>
-    </aside>
-    
     <main>
         <h1>New Schedule</h1>
-        <?php if ($can_edit): ?>
+        
         <form action="submit.php" method="POST" enctype="multipart/form-data">
-            <label>Schedule Name*</label>
+            <label>Nama Rapat*</label>
             <input type="text" name="schedule_name" required>
         
-            <label>Date*</label>
+            <label>Tanggal*</label>
             <input type="date" name="date" required>
         
-            <label>Description*</label>
+            <label>Deskripsi*</label>
             <textarea name="description" required></textarea>
         
-            <label>Location*</label>
+            <label>Tempat*</label>
             <input type="text" name="location" required>
         
-            <label>Invitation Letter</label>
+            <label>Undangan</label>
             <input type="file" name="invitation_letter">
         
-            <label>Documentation</label>
+            <label>Dokumentasi</label>
             <input type="file" name="documentation">
         
             <div class="d-flex gap-2 mt-3">
-                <button type="submit">Create</button>
-                <button type="button" onclick="window.location.href='schedule.php'">Cancel</button>
+                <button type="submit">Buat</button>
+                <button type="button" onclick="window.location.href='schedule.php'">Batal</button>
             </div>
         </form>
-        <?php else: ?>
-            <!-- Untuk user biasa -->
-            <p style="color: gray; font-style: italic;">Silakan login sebagai admin untuk menambahkan jadwal rapat.</p>
-        <?php endif; ?>        
+               
     </main>
     <script>
         function toggleDropdown(id) {

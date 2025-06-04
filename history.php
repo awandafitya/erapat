@@ -105,7 +105,7 @@ $fotoPath = !empty($profile['foto']) ? "uploads/" . $profile['foto'] : "assets/i
                          onerror="this.src='assets/icons/default-profile.png'">
                 </span>
                 <div id="profile-dropdown" class="dropdown-content">
-                    <button onclick="logout()">Log Out</button>
+                    <button onclick="logout()">Keluar</button>
                 </div>           
             </div>
         </div>
@@ -120,28 +120,27 @@ $fotoPath = !empty($profile['foto']) ? "uploads/" . $profile['foto'] : "assets/i
         </div>
         <nav>
             <ul>
-                <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> SCHEDULE</a></li>
-                <li><a href="submission.php"><img src="assets/icons/ikonsubmission.png" class="icon"> SUBMISSION</a></li>
-                <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> PRESENCE</a></li>
-                <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> HISTORY</a></li>
+                <li><a href="schedule.php"><img src="assets/icons/ikonschedule.png" class="icon"> JADWAL</a></li>
+                <li><a href="presence.php"><img src="assets/icons/ikonpresence.png" class="icon"> ABSENSI</a></li>
+                <li><a href="history.php"><img src="assets/icons/ikonhistory.png" class="icon"> RIWAYAT</a></li>
                 <?php if ($can_edit): ?>
-                    <li><a href="keloladata.php"><img src="assets/icons/ikonkeloladata.png" class="icon"> MANAGE DATA</a></li>
+                    <li><a href="keloladata.php"><img src="assets/icons/ikonkeloladata.png" class="icon"> KELOLA DATA</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
     </aside>
 
     <main>
-        <h1>Meeting History</h1>
+        <h1>Riwayat Rapat</h1>
         <div id="calendar"></div>
         
         <table id="history-table">
             <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Schedule</th>
-                    <th>Description</th>
-                    <th>Location</th>
+                    <th>Tanggal</th>
+                    <th>Nama Rapat</th>
+                    <th>Deskripsi</th>
+                    <th>Tempat</th>
                 </tr>
             </thead>
             <tbody></tbody>

@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="login.php" method="POST">
             <input type="text" class="input-field" name="username" placeholder="Username" required>
             <input type="password" class="input-field" name="password" placeholder="Password" required>
-            <button type="submit" class="login-btn" name="submit">Login</button>
+            <button type="submit" class="login-btn" name="submit">Masuk</button>
         </form>
 
         <!-- Tampilkan pesan error jika ada -->

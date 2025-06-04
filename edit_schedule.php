@@ -62,26 +62,26 @@ if (isset($_GET['id'])) {
         <form id="edit-agenda-form">
             <input type="hidden" id="agenda-id" name="id" value="<?php echo $agenda['id']; ?>">
 
-            <label for="edit-date">Date:</label>
+            <label for="edit-date">Tanggal:</label>
             <input type="date" id="edit-date" name="date" value="<?php echo $agenda['date']; ?>" required><br><br>
 
-            <label for="edit-schedule-name">Schedule Name:</label>
+            <label for="edit-schedule-name">Nama Rapat:</label>
             <input type="text" id="edit-schedule-name" name="schedule_name" value="<?php echo $agenda['schedule_name']; ?>" required><br><br>
 
-            <label for="edit-description">Description:</label>
+            <label for="edit-description">Deskripsi:</label>
             <textarea id="edit-description" name="description" required><?php echo $agenda['description']; ?></textarea><br><br>
 
-            <label for="edit-location">Location:</label>
+            <label for="edit-location">Tempat:</label>
             <input type="text" id="edit-location" name="location" value="<?php echo $agenda['location']; ?>" required><br><br>
             
-            <label for="edit-invitation">Invitation Letter:</label>
+            <label for="edit-invitation">Undangan:</label>
             <input type="file" id="edit-invitation" name="invitation"><br><br>
             
-            <label for="edit-documentation">Documentation:</label>
+            <label for="edit-documentation">Dokumentasi:</label>
             <input type="file" id="edit-documentation" name="documentation"><br><br>
 
             <div class="d-flex justify-content-end gap-2 mt-3">
-                <button type="submit" class="btn btn-success">Save Changes</button>
+                <button type="submit" class="btn btn-success">Simpan Perubahan</button>
                 <button type="button" class="btn btn-secondary" onclick="window.location.href='schedule.php'">Cancel</button>
             </div>
         </form>

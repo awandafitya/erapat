@@ -171,7 +171,7 @@ $jabatan = $conn->query("SELECT * FROM jabatan");
                          onerror="this.src='assets/icons/default-profile.png'">
                 </span>
                 <div id="profile-dropdown" class="dropdown-content">
-                    <button onclick="logout()">Log Out</button>
+                    <button onclick="logout()">Keluar</button>
                 </div>          
             </div>
         </div>
@@ -185,7 +185,7 @@ $jabatan = $conn->query("SELECT * FROM jabatan");
     <input type="text" name="nip" placeholder="NIP" required value="<?= $editData['nip'] ?? '' ?>" <?= $editData ? 'readonly' : '' ?>>
     <input type="text" name="nama" placeholder="Nama" required value="<?= $editData['nama'] ?? '' ?>">
     <input type="text" name="username" placeholder="Username" required value="<?= $editData['username'] ?? '' ?>">
-    <input type="text" name="password" placeholder="Password (isi baru jika ingin ganti)" <?= $editData ? '' : 'required' ?>>
+    <input type="text" name="password" placeholder="Password" <?= $editData ? '' : 'required' ?>>
     <select name="role" required>
         <option value="">-- Pilih Role --</option>
         <option value="admin" <?= (isset($editData['role']) && $editData['role'] === 'admin') ? 'selected' : '' ?>>Admin</option>

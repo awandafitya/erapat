@@ -232,7 +232,7 @@ if (isset($_GET['id'])) {
                 border-radius: 5px; 
                 cursor: pointer;
                 font-weight: bold;">
-                Back
+                Kembali
             </button>
         </form>
         <script>

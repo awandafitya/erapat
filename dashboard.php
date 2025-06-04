@@ -63,7 +63,7 @@ $fotoPath = !empty($profile['foto']) ? "uploads/" . $profile['foto'] : "assets/i
                          onerror="this.src='assets/icons/default-profile.png'">
                 </span>
                 <div id="profile-dropdown" class="dropdown-content">
-                    <button onclick="logout()">Log Out</button>
+                    <button onclick="logout()">Keluar</button>
                 </div>           
             </div>
         </div>
@@ -83,8 +83,8 @@ $fotoPath = !empty($profile['foto']) ? "uploads/" . $profile['foto'] : "assets/i
 
     <!-- MAIN CONTENT -->
     <main class="content">
-        <h1>Welcome to E-Rapat</h1>
-        <p>Manage your meetings efficiently with our dashboard.</p>
+        <h1>Selamat Datang di E-Rapat</h1>
+        <p>Kelola Rapat Anda Secara Efisien</p>
 
         <!-- Profile -->
         <div class="profile-container">
