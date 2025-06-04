@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Bulan Mei 2025 pada 10.08
+-- Waktu pembuatan: 04 Jun 2025 pada 09.49
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -114,7 +114,8 @@ CREATE TABLE `presence` (
 --
 
 INSERT INTO `presence` (`nip`, `name`, `schedule_id`, `photo`, `signature`) VALUES
-('0', 'dummy', 2, '1745827158_123.png', 'signature_1745827158.png');
+('0', 'dummy', 2, '1745827158_123.png', 'signature_1745827158.png'),
+('0', 'dummy', 6, '1748849276_WhatsApp Image 2025-06-02 at 10.27.09_fcd2342a.jpg', 'signature_1748849276.png');
 
 -- --------------------------------------------------------
 
@@ -136,6 +137,7 @@ CREATE TABLE `profile` (
 
 INSERT INTO `profile` (`nip`, `nama`, `foto`, `username`, `jabatan_id`) VALUES
 ('0', 'dummy', '123.png', '1', 3),
+('09020622022', 'Arifa Maulida', 'pp.jpg', 'arifamaulida', 2),
 ('12345678', 'Magang MBKM Sistem Informasi UINSA', 'self-employed.png', '0', 1);
 
 -- --------------------------------------------------------
@@ -156,7 +158,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `password`, `role`) VALUES
 ('0', '0', 'admin'),
-('1', '1', 'user');
+('1', '1', 'user'),
+('arifamaulida', 'Armau1', 'user');
 
 --
 -- Indexes for dumped tables
