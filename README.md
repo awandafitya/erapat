@@ -2,3 +2,5 @@ E-Rapat adalah sistem digital untuk mengelola rapat, mulai dari agenda, pelaksan
 
 Login admin username : 0 Password : 0
 Login user username : 1 Password : 1
+
+sebelum menjalankan fitur peringkas otomatis bash python summarizer_api.py 
